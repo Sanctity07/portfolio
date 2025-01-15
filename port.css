@@ -116,9 +116,11 @@ section {
     line-height: 25px;
     font-size: 2rem;
 }
+
 span{
     color: var(--main-color);
 }
+
 h3{
     font-size: 2rem;
 }
@@ -376,7 +378,7 @@ h3{
     color: var(--snd-bg-color);
 }
 
-marquee{
+marquee {
     font-size: 2rem;
     background-color: var(--main-color);
     color: white;
@@ -390,7 +392,7 @@ marquee{
     animation: marquee 15s linear infinite;
 }
 
-.marquee{
+.marquee {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -419,7 +421,7 @@ marquee{
     .navbar a {
         margin: 1rem 0;
     }
-    
+
     #menu-icon {
         display: block;
         padding: 1rem;
@@ -446,6 +448,20 @@ marquee{
     .portfolio-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img {
+        order: 1;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        order: 2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -464,48 +480,30 @@ marquee{
     .portfolio-container {
         grid-template-columns: 1fr;
     }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 45%;
-    }
-
     .home-content h1 {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
     }
 
-    .social-media a {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.6rem;
+    .home-content p {
+        font-size: 1.2rem;
     }
 
-    .footer-icontop {
-        padding: 5rem 1rem;
+    .about-content h2 {
+        font-size: 2.2rem;
     }
 
-    .footer-text {
+    .about-content p {
         font-size: 1.4rem;
     }
-}
-/* Initially hide navbar on smaller screens */
-@media (max-width: 1024px) {
-    .navbar {
-        display: none; /* Hide navbar by default */
-        flex-direction: column; /* Stack the links vertically */
+
+    .services-box i {
+        font-size: 5rem;
     }
 
-    .navbar.active {
-        display: flex; /* Show navbar when active class is added */
-    }
-
-    #menu-icon {
-        display: block; /* Show the menu icon */
+    .portfolio-box h4 {
+        font-size: 2rem;
     }
 }
