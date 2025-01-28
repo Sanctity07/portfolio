@@ -15,7 +15,7 @@
     --bg-color: #191f36;
     --snd-bg-color: #262840;
     --text-color: #fff;
-    --main-color: #252fed;
+    --main-color: #2bb2db;
 }
 
 html {
@@ -378,27 +378,6 @@ h3{
     color: var(--snd-bg-color);
 }
 
-marquee {
-    font-size: 2rem;
-    background-color: var(--main-color);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    animation: marquee 15s linear infinite;
-}
-
-.marquee {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
 
 /* Media Queries */
 @media (max-width: 1200px) {
